@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Manual.module.css'
 import Header from '../components/header'
 
-export default function manual() {
+export default function Manual() {
     return(
       <>
         <Head>

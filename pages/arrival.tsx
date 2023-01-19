@@ -5,7 +5,7 @@ import Header from '../components/header'
 import Button from '../components/button'
 import { useRouter } from "next/router"
 
-export default function arrival() {
+export default function Arrival() {
   const router = useRouter()
   const { d, a } = router.query
   const travelInfo = {

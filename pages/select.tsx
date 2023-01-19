@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Header from '../components/header'
 import Button from '../components/button'
 
-export default function select() {
+export default function Select() {
     const travelInfo = {
       departure: "출발지",
       arrival: "도착지",
