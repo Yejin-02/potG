@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Header from '../components/header'
-import Button from '../components/btn'
+import Button from '../components/button'
 
 export default function Profile() {
   return(

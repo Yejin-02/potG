@@ -1,7 +1,7 @@
 import styles from "../styles/potList.module.css"
 import Link from 'next/link'
 
-function List(departure, arrival) {
+function PotList(departure, arrival) {
     const pot1 = {
         no: 1,
         year: 2022,
@@ -63,4 +63,4 @@ function List(departure, arrival) {
     );
 }
 
-export default List;
+export default PotList;

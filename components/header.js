@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image';
 import styles from "../styles/header.module.css"
 
 function Header() {
@@ -6,7 +7,7 @@ function Header() {
         <>
             <div className={styles.header}>
                 <Link className={styles.link} href={{pathname:`/main`}}>
-                    <img
+                    <Image
                         className={styles.logo}
                         src='../logo.png'
                         alt='logo'

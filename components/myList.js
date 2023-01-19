@@ -1,7 +1,7 @@
 import styles from "../styles/myList.module.css"
 import Link from 'next/link'
 
-function List(departure, arrival) {
+function MyList(departure, arrival) {
     const pot1 = {
         no: 1,
         year: 22,
@@ -66,4 +66,4 @@ function List(departure, arrival) {
     );
 }
 
-export default List;
+export default MyList;

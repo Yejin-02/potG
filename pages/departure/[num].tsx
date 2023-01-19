@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../../styles/Home.module.css'
 import Header from '../../components/header'
-import List from '../../components/potLIst'
+import PotList from '../../components/potList'
 import { useRouter } from "next/router"
 
 export default function DepartureList() {
@@ -28,7 +28,7 @@ export default function DepartureList() {
                     <div className={styles.arrow}>&gt;</div>
                     <div className={styles.arrivalText}>{travelInfo.arrival}</div>
                 </div>
-                <List departure={travelInfo.departure} arrival={travelInfo.arrival}></List>
+                <PotList departure={travelInfo.departure} arrival={travelInfo.arrival}></PotList>
             </main>
         </>
     )
