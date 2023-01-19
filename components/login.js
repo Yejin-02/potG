@@ -18,7 +18,18 @@ export default function Login() {
     }   
     
     return (
-        <div>
+        <>
+            <div className={styles.nav}>
+            </div>
+            <div className={styles.header}>
+                <Link className={styles.link} href={{pathname:`/main`}}>
+                    <img
+                        className={styles.logo}
+                        src='../logo.png'
+                        alt='logo'
+                    />
+                </Link>
+            </div>
             <h3>로그인</h3>
             <form className={styles.loginBar}>
                 <div className={styles.boxAndInput}>
@@ -69,10 +80,9 @@ export default function Login() {
                     <Link state={{id:id, pw:pw}} href={{pathname:`/signup`}} className={styles.link}><div className={styles.joinButton}>Sign Up</div></Link>
                 </div>
                 <div className={styles.boxAndBox}>
-                    <Link href={{pathname:`/findID`}} className='link'><div className={styles.findIdButton}>Find ID</div></Link>
-                    <Link href={{pathname:`/findPW`}} className='link'><div className={styles.findPwButton}>Find PW</div></Link>
+                    <Link href={{pathname:`/findPW`}} className={styles.link}><div className={styles.findPwButton}>Find PW</div></Link>
                 </div>
             </form>
-        </div>
+        </>
     )
 }

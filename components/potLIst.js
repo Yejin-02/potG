@@ -39,7 +39,7 @@ function PotList(departure, arrival) {
                         <th>날짜</th>
                         <th>시간</th>
                         <th>인원</th>
-                        <th></th>
+                        <th className={styles.last}></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -48,14 +48,20 @@ function PotList(departure, arrival) {
                         <td>{pot1.year}-{pot1.month}-{pot1.date}</td>
                         <td>{pot1.hour}:{pot1.minute}</td>
                         <td>{pot1.people}/4</td>
-                        <td><Link href={{pathname:`/participate/${pot1.id}`, query: {d: pot1.departure, a: pot1.arrival, id: pot1.id, date: pot1.year+'/'+pot1.month+'/'+pot1.date, time: pot1.hour+':'+pot1.minute, link: pot1.link}, }} as={`/participate/${pot1.id}`} class="linkBtn">참여</Link></td>
+                        <td className={styles.last}><Link href={{pathname:`/participate/${pot1.id}`, query: {d: pot1.departure, a: pot1.arrival, id: pot1.id, date: pot1.year+'/'+pot1.month+'/'+pot1.date, time: pot1.hour+':'+pot1.minute, link: pot1.link}, }} as={`/participate/${pot1.id}`} class={styles.linkBtn}>참여</Link></td>
+                    </tr>
+                    <tr className={styles.forMedia}>
+                        <td colSpan='4'><Link href={{pathname:`/participate/${pot1.id}`, query: {d: pot1.departure, a: pot1.arrival, id: pot1.id, date: pot1.year+'/'+pot1.month+'/'+pot1.date, time: pot1.hour+':'+pot1.minute, link: pot1.link}, }} as={`/participate/${pot1.id}`} class={styles.linkBtn}>참여</Link></td>
                     </tr>
                     <tr>
                         <td>{pot2.no}</td>
                         <td>{pot2.year}-{pot2.month}-{pot2.date}</td>
                         <td>{pot2.hour}:{pot2.minute}</td>
                         <td>{pot2.people}/4</td>
-                        <td><Link href={{pathname:`/participate/${pot2.id}`, query: {d: pot2.departure, a: pot2.arrival, id: pot2.id, date: pot2.year+'/'+pot2.month+'/'+pot2.date, time: pot2.hour+':'+pot2.minute, link: pot2.link}, }} as={`/participate/${pot2.id}`} class="linkBtn">참여</Link></td>
+                        <td className={styles.last}><Link href={{pathname:`/participate/${pot2.id}`, query: {d: pot2.departure, a: pot2.arrival, id: pot2.id, date: pot2.year+'/'+pot2.month+'/'+pot2.date, time: pot2.hour+':'+pot2.minute, link: pot2.link}, }} as={`/participate/${pot2.id}`} class={styles.linkBtn}>참여</Link></td>
+                    </tr>
+                    <tr className={styles.forMedia}>
+                        <td colSpan='4'><Link href={{pathname:`/participate/${pot1.id}`, query: {d: pot1.departure, a: pot1.arrival, id: pot1.id, date: pot1.year+'/'+pot1.month+'/'+pot1.date, time: pot1.hour+':'+pot1.minute, link: pot1.link}, }} as={`/participate/${pot1.id}`} class={styles.linkBtn}>참여</Link></td>
                     </tr>
                 </tbody>
             </table>

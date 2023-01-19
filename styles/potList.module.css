@@ -1,6 +1,6 @@
 .list {
-    width: 50vw;
-    min-width: 400px;
+    max-width: 800px;
+    width: 90vw;
     font-size: 1em;
     box-shadow: 0 2px 5px rgba(0,0,0,.25);
     margin: 0 auto;
@@ -8,12 +8,54 @@
     border-radius: 5px;
     overflow: hidden;
 }
-  
+
+.linkBtn {
+    text-decoration: none;
+    color: black;
+    width: 50px;
+    background-color: #ffdc47;
+    display: block;
+    margin: 0 auto;
+}
+
+.linkBtn:hover {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,.25);
+}
+
+.forMedia {
+    display: none;
+}
+
 @media screen and (max-width: 400px) {
-    .list {
-        font-size: .2em;
+    .last {
+        display: none;
     }
-} 
+
+    .forMedia {
+        display: table-row;
+    }
+
+    .list td:first-child
+    .list th:first-child {
+        width: 14%;
+    }
+
+    .list td:nth-child(2),
+    .list th:nth-child(2) {
+        width: 50%;
+    }
+
+    .list td:nth-child(3),
+    .list th:nth-child(3) {
+        width: 18%;
+    }
+
+    .list td:nth-child(4),
+    .list th:nth-child(4) {
+        width: 18%;
+    }
+}
 
 .list thead {
     font-weight: bold;
@@ -24,6 +66,7 @@
     padding: 1em .5em;
     vertical-align: middle;
     text-align: center;
+    align-items: center;
 }
 
 .list td:first-child,

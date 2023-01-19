@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import mainStyles from '../styles/main.module.css'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header'
 import List from '../components/myList'
@@ -12,7 +13,7 @@ export default function MyPage() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/potg.ico" />
         </Head>
-        <main className={styles.main}>
+        <main className={mainStyles.main}>
           <Header/>
           <h3>회원정보</h3>
           <div className='userInfo'>
@@ -24,5 +25,5 @@ export default function MyPage() {
           <List />
         </main>
       </>
-      )
-  }
+    )
+}

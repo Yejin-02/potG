@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React, { useState } from 'react';
+import mainStyles from '../../styles/main.module.css'
 import styles from "../../styles/Home.module.css"
 import ModalBase from '../ModalBase';
 import CardModal from '../CardModal';
@@ -12,6 +13,10 @@ const Participate = () => {
 
     const onClickModalOn = () => {
         setIsActive(true);
+    };
+
+    const onClickModalOff= () => {
+        setIsActive(false);
     };
 
     const onClickMove = () => {
@@ -37,7 +42,7 @@ const Participate = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/potg.ico" />
             </Head>
-            <main className={styles.main}>
+            <main className={mainStyles.main}>
                 <Header/>
                 <h3>이 택시팟에 참여하시겠습니까?</h3>
                 <div className={styles.checkIn}>
@@ -48,7 +53,7 @@ const Participate = () => {
                         <p>도착지: {potInfo.potArr}</p>
                     </div>
                     <button onClick={onClickModalOn} className={styles.checkInBtn}>예</button>
-                    <ModalBase active={isActive}>
+                    <ModalBase active={isActive} closeEvent={onClickModalOff}>
                         <CardModal actionEvent={onClickMove} title="택시 팟 참여가 완료되었습니다.">
                             <Link legacyBehavior href={potInfo.potLink}><a target="_blank" className={styles.kakaolink}>오픈 채팅 방</a></Link>에 접속해 파티원들을 만나보세요.
                         </CardModal>

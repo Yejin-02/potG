@@ -1,0 +1,148 @@
+.nav li {
+    display: inline-block;
+    list-style: none;
+    width: 250px;
+    height: 40px;
+    position: relative;
+    background-color: #ffdc47;
+    line-height: 2;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.nav li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #ffffff;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.nav li::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #ffdc47;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.nav li:first-child {
+  z-index: 100;
+}
+
+.nav li:nth-child(2) {
+  z-index: 50;
+}
+
+.ing {
+    font-weight: bolder;
+    text-shadow: 0 1px 0.5px rgba(0,0,0,.25);
+    box-shadow: 0 2px 0 rgba(0,0,0,.25);
+}
+
+.notyet {
+  font-weight: normal;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.firsted {
+  display: none;
+}
+
+.first {
+  display: block;
+}
+
+
+.foundPW {
+  align-items: center;
+  display: none;
+}
+.findPW {
+  align-items: center;
+  display: block;
+}
+
+
+
+
+
+.main {
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+
+
+
+
+.loginBar {
+  margin: 0 auto;
+}
+
+.boxAndInput {
+  height: 45px;
+  display: flex;
+}
+
+
+.loginBox,
+.loginInput {
+  align-items: center;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 1.2em;
+  border-radius: 10px;
+  background-color: white;
+  width: 90px;
+  height: 35px;
+}
+
+.loginInput {
+  width: 220px;
+  margin-left: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+}
+
+.boxAndBox {  
+  height: 35px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.signupButton {
+  text-align: center;
+  font-size: 1.2em;
+  border-radius: 10px;
+  background-color: #ffdc47;
+  width: 240px;
+  margin-left: 40px;
+  height: 35px;
+  line-height: 1.7;
+  
+}
+
+.signupButton:hover {
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+}
+
+.link {
+  text-decoration: none;
+  background-color: none;
+  color: black;
+}

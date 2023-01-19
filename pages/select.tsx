@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import mainStyles from '../styles/main.module.css'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Header from '../components/header'
@@ -17,7 +18,7 @@ export default function Select() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/potg.ico" />
         </Head>
-        <main className={styles.main}>
+        <main className={mainStyles.main}>
           <Header/>
             <div className={styles.travelInfo}>
               <div className={styles.departureText} style={{color: 'gray'}}>{travelInfo.departure}</div>

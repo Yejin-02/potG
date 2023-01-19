@@ -4,10 +4,11 @@ import { css } from '@emotion/react';
 
 export type ModalBaseProps = {
   active: boolean;
+  closeEvent?: (e?: React.MouseEvent<HTMLDivElement>) => void;
   children: React.ReactNode;
 };
 
-const ModalBase = ({ active, children }: ModalBaseProps) => {
+const ModalBase = ({ active, closeEvent, children }: ModalBaseProps) => {
   const [closed, setClosed] = useState(true);
   useEffect(() => {
     document.body.style.overflowY = active ? 'hidden' : 'initial';
@@ -38,7 +39,7 @@ const ModalBase = ({ active, children }: ModalBaseProps) => {
   return (
     <>
       <ModalBaseContainer active={active}>
-        <div className="modal_back"/>
+        <div className="modal_back" onClick={closeEvent} />
         <div className="modal_content">{children}</div>
       </ModalBaseContainer>
     </>

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import mainStyles from '../../styles/main.module.css'
 import styles from '../../styles/Home.module.css'
 import Header from '../../components/header'
 import PotList from '../../components/potList'
@@ -21,7 +22,7 @@ export default function ArrivalList() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/potg.ico" />
             </Head>
-            <main className={styles.main}>
+            <main className={mainStyles.main}>
                 <Header/>
                 <div className={styles.travelInfo}>
                     <div className={styles.departureText}>{travelInfo.departure}</div>
