@@ -1,0 +1,50 @@
+.form label {
+    font-size: 1em;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    height: 35px;
+}
+
+.form select {
+    font-size: 1em;
+    height: 35px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.25);
+    padding-left: 8px;
+    padding-right: 5px;
+}
+
+.form p {
+    display: inline;
+}
+
+.form button {
+    display: block;
+}
+
+.form input[type=text] {
+    height: 35px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.25);
+}
+
+#linkLabel {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+}
+
+.btn {
+    font-size: 1em;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #ffdc47;
+}
+
+.btn:hover {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,.25);
+}

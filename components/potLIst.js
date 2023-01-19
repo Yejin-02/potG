@@ -65,6 +65,9 @@ function PotList(departure, arrival) {
                     </tr>
                 </tbody>
             </table>
+            <Link href={{pathname:`/create`}} class={styles.newPotBtnContainer}>
+                <div class={styles.newPotBtn}>+ 새 팟 생성하기</div>
+            </Link>
         </div>
     );
 }
