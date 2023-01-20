@@ -9,6 +9,10 @@
     overflow: hidden;
 }
 
+.listDiv {
+    margin-bottom: 5vh;
+}
+
 .linkBtn {
     text-decoration: none;
     color: black;

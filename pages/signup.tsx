@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import Header from '../components/header'
 
-export default function Profile() {
+export default function SignUp() {
 
     let [id, setID] = useState('');
     let [pw, setPW] = useState('');

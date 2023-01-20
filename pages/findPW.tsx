@@ -4,7 +4,7 @@ import styles from '../styles/find.module.css'
 import { useState } from 'react'
 import Header from '../components/header'
 
-export default function findPW() {
+export default function FindPW() {
     let [id, setID] = useState('');
     let [auth, setAuth] = useState('');
     let [newPW, setNewPW] = useState('');

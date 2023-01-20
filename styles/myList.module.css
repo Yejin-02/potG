@@ -1,12 +1,16 @@
 .list {
-    width: 50vw;
-    min-width: 380px;
+    max-width: 800px;
+    width: 90vw;
     font-size: 1em;
     box-shadow: 0 2px 5px rgba(0,0,0,.25);
     margin: 0 auto;
     border-collapse: collapse;
     border-radius: 5px;
     overflow: hidden;
+}
+
+.listDiv {
+    margin-bottom: 5vh;
 }
   
 @media screen and (max-width: 400px) {
